@@ -1,0 +1,263 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff0f2;
+    color: #8b001e;
+}
+
+/* صفحة الباسورد */
+
+.login-page {
+    min-height: 100vh;
+    width: 100%;
+    background: #b30024;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.login-box {
+    width: 90%;
+    max-width: 400px;
+
+    background: white;
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px #50001455;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heart {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.login-box h1 {
+    color: #b30024;
+    margin-bottom: 15px;
+}
+
+.login-box p {
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 15px;
+
+    border: 2px solid #b30024;
+    border-radius: 10px;
+
+    text-align: center;
+    font-size: 17px;
+
+    margin-bottom: 15px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 14px;
+
+    background: #b30024;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #800020;
+}
+
+/* الصفحة الثانية */
+
+.hero {
+    background: linear-gradient(135deg, #800020, #ff4d6d);
+
+    color: white;
+    text-align: center;
+
+    padding: 65px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin: 10px;
+}
+
+/* بداية الحكاية */
+
+.story, .message {
+    background: white;
+
+    max-width: 850px;
+
+    margin: 40px auto;
+    padding: 35px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    line-height: 2;
+
+    box-shadow: 0 5px 15px #c9184a20;
+}
+
+.section-title {
+    text-align: center;
+    margin: 45px 10px 25px;
+}
+
+/* شبكة الصور */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-auto-rows: 260px;
+
+    gap: 18px;
+
+    padding: 20px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.photo {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 15px #80002030;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+.photo:hover img {
+    transform: scale(1.08);
+}
+
+.photo span {
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+
+    width: 100%;
+
+    padding: 15px;
+
+    color: white;
+    text-align: center;
+
+    background: linear-gradient(
+        transparent,
+        #800020cc
+    );
+}
+
+/* مربعات بأحجام مختلفة */
+
+.photo-large {
+    grid-row: span 2;
+}
+
+.photo-wide {
+    grid-column: span 2;
+}
+
+/* رسالة الحب */
+
+.message h2 {
+    margin-bottom: 20px;
+}
+
+.message h3 {
+    margin-top: 20px;
+    color: #c9184a;
+}
+
+/* الفوتر */
+
+footer {
+    background: #800020;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+/* الموبايل */
+
+@media (max-width: 650px) {
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-auto-rows: 190px;
+
+        gap: 10px;
+
+        padding: 12px;
+    }
+
+    .photo-large {
+        grid-row: span 2;
+    }
+
+    .photo-wide {
+        grid-column: span 2;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .story, .message {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+
+}
+@media (max-width: 1023px){
+    
+}

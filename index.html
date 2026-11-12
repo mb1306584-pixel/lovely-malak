@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love Story ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+
+    <div class="login-box">
+        <div class="heart">❤️</div>
+        <h1>I Love malak</h1>
+        <p>كل حكاية حلوة ليها بداية.. ودي حكايتنا</p>
+
+        <input type="password" id="password" placeholder="الباسورد تاريخ ارتبطنا">
+        <button onclick="login()">دخول ❤️</button>
+
+        <p id="error"></p>
+    </div>
+
+    <script>
+        function login() {
+            const password = document.getElementById("password").value;
+
+            if (password === "1572025") {
+                window.location.href = "moments.html";
+            } else {
+                document.getElementById("error").textContent =
+                    "الباسورد مش صحيح، حاول تاني ❤️";
+            }
+        }
+    </script>
+
+</body>
+</html>
